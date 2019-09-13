@@ -1,0 +1,1 @@
+Select COUNT(DISTINCT EMPLOYEEID) as "Number of CellPhones", Current_timestamp as "Report Run Date", Sum(TOTALMINUTES) as "Total minutes", Sum(TOTALDATA) as "Total Data", AVG(TOTALMINUTES) as "Average Minutes" , AVG(TOTALDATA) as "Average Data" from CellPhoneUsageByMonth;

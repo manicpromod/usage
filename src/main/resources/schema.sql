@@ -1,0 +1,6 @@
+CREATE TABLE CellPhone AS SELECT * FROM CSVREAD('src/main/resources/CellPhone.csv');
+CREATE TABLE CellPhoneUsageByMonth AS SELECT * FROM CSVREAD('src/main/resources/CellPhoneUsageByMonth.csv');
+
+ALTER TABLE CellPhoneUsageByMonth ALTER COLUMN TOTALMINUTES SET DATA TYPE  DECIMAL;
+
+ALTER TABLE CellPhoneUsageByMonth ALTER COLUMN TOTALDATA SET DATA TYPE  DECIMAL;
